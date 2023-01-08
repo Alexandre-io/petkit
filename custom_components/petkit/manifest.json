@@ -1,6 +1,6 @@
 {
-  "domain": "petkit-homekit",
-  "name": "Petkit-homekit",
+  "domain": "petkit",
+  "name": "Petkit",
   "version": "0.1.0",
   "documentation": "https://github.com/Alexandre-io/petkit",
   "issue_tracker": "https://github.com/Alexandre-io/petkit/issues",
