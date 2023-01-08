@@ -638,14 +638,19 @@ class LitterDevice(PetkitDevice):
         return {
             **super().hass_sensor,
             'sand_percent': {
+                'unit': '%',
+                'class': 'humidity',
                 'icon': 'mdi:percent-outline',
                 'state_attrs': self.sand_attrs,
             },
             'liquid': {
+                'unit': '%',
+                'class': 'humidity',
                 'icon': 'mdi:water-percent',
                 'state_attrs': self.liquid_attrs,
             },
             'pet_weight': {
+                'unit': 'g',
                 'icon': 'mdi:weight',
                 'state_attrs': self.pet_weight_attrs,
             },
@@ -886,7 +891,7 @@ class PetkitEntity(CoordinatorEntity):
         self.entity_id = f'{DOMAIN}.{self._attr_device_id}_{name}'
         self._attr_icon = self._option.get('icon')
         self._attr_device_class = self._option.get('class')
-        self._attr_unit_of_measurement = self._option.get('unit')
+        self._attr_native_unit_of_measurement = self._option.get('unit')
         self._attr_device_info = {
             'identifiers': {(DOMAIN, self._attr_device_id)},
             'name': device.data.get('name'),

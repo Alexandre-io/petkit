@@ -2,7 +2,7 @@
 
 ## Installing
 
-> [Download](https://github.com/hasscc/petkit/archive/main.zip) and copy `custom_components/petkit` folder to `custom_components` folder in your HomeAssistant config folder
+> [Download](https://github.com/Alexandre-io/petkit/archive/main.zip) and copy `custom_components/petkit` folder to `custom_components` folder in your HomeAssistant config folder
 
 ```shell
 # Auto install via terminal shell
